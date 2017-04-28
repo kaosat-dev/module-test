@@ -1,0 +1,16 @@
+{
+  "name": "@kaosat-dev/module-test",
+  "version": "0.0.0",
+  "description": "Example jscad module of parts",
+  "main": "index.js",
+  "scripts": {
+    "release-patch": "git checkout master && npm version patch && git commit -a -m 'chore(dist): built dist/'; git push origin master --tags ",
+    "release-minor": "git checkout master && npm version minor && git commit -a -m 'chore(dist): built dist/'; git push origin master --tags ",
+    "release-major": "git checkout master && npm version major && git commit -a -m 'chore(dist): built dist/'; git push origin master --tags "
+  },
+  "author": "Mark 'kaosat-dev' Moissette",
+  "license": "MIT",
+  "dependencies": {
+    "@jscad/scad-api": "latest"
+  }
+}
